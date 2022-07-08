@@ -1,6 +1,5 @@
 import { useState } from "react";
-// import "./App.css";
-import GlobalStyle from "./globalStyles";
+import { ThemeProvider, GlobalStyle } from "@theme";
 
 import * as S from "./styles";
 
@@ -9,14 +8,17 @@ function App() {
 
   return (
     <>
-      <GlobalStyle />
-
-      <S.FirstS>
-        <S.Header>Hello Yo</S.Header>
-      </S.FirstS>
-      <S.SecondS>
-        <S.Header>Hello Yo</S.Header>
-      </S.SecondS>
+      <ThemeProvider>
+        <GlobalStyle />
+        <S.FirstS>
+          <S.Header>Welcome.</S.Header>
+          <h2>Home About Projects Blogposts Contact</h2>
+          <p>Almost before we knew it, we had left the ground</p>
+        </S.FirstS>
+        <S.SecondS>
+          <S.Header>Hello Yo</S.Header>
+        </S.SecondS>
+      </ThemeProvider>
     </>
   );
 }
