@@ -1,22 +1,31 @@
 import { useState } from "react";
 import { ThemeProvider, GlobalStyle } from "@theme";
+import { Navbar } from "@components";
 
 import * as S from "./styles";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <ThemeProvider>
         <GlobalStyle />
-        <S.FirstS>
+        <S.FirstS id="home">
           <S.Header>Welcome.</S.Header>
-          <h2>Home About Projects Blogposts Contact</h2>
-          <p>Almost before we knew it, we had left the ground</p>
+          <Navbar />
+          <S.Text>
+            need to find a cool text to put right here, Im testing if this text
+            can break the line and still looking beautiful for my website, I
+            think so, right?
+          </S.Text>
         </S.FirstS>
-        <S.SecondS>
-          <S.Header>Hello Yo</S.Header>
+        <S.SecondS id="about">
+          <S.Header>About me</S.Header>
+        </S.SecondS>
+        <S.FirstS id="projects">
+          <S.Header>Projects</S.Header>
+        </S.FirstS>
+        <S.SecondS id="blog">
+          <S.Header>Blogposts Here</S.Header>
         </S.SecondS>
       </ThemeProvider>
     </>
