@@ -5,6 +5,12 @@ export const Text = styled.p`
   font-family: "Montserrat", sans-serif;
 `;
 
+export const CodeText = styled.p`
+  color: ${({ theme: { colors } }) => colors.alternative_blue};
+  font-family: "Fira Code", monospace;
+  font-size: 64px;
+`;
+
 export const Header = styled(Text)`
   font-size: 10vw;
 `;

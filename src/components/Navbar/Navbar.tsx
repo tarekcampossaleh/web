@@ -1,5 +1,7 @@
 import React from "react";
+
 import * as S from "./styles";
+
 const Navbar = () => (
   <S.Container>
     <S.Label href="#home">Home</S.Label>

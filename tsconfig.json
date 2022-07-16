@@ -19,6 +19,7 @@
     "paths": {
       "@components": ["components"],
       "@theme": ["theme"],
+      "@content": ["content"],
     }
   },
   "include": ["src"],
