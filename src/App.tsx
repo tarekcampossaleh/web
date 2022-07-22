@@ -12,7 +12,7 @@ function App() {
     <ThemeProvider>
       <GlobalStyle />
       <S.FirstS id="home">
-        <S.Header>{home.header}</S.Header>
+        <S.TextHeader>{home.header}</S.TextHeader>
         <Navbar />
         <S.Text>{home.text}</S.Text>
       </S.FirstS>
@@ -36,11 +36,11 @@ function App() {
         </S.AboutWrapper>
       </PageSection>
       <PageSection id="projects" primary>
-        <S.Header>Projects</S.Header>
+        <S.TextHeader>Projects</S.TextHeader>
         <EmptyState />
       </PageSection>
       <PageSection id="blog">
-        <S.Header>Blogposts Here</S.Header>
+        <S.TextHeader>Blogposts Here</S.TextHeader>
         <EmptyState />
       </PageSection>
     </ThemeProvider>

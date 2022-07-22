@@ -1,13 +1,11 @@
 import styled from "styled-components";
 import { Texts } from "@theme";
 
-export const Header = styled(Texts.Header)``;
+export const TextHeader = styled(Texts.Header)``;
 
 //TODO: make breakpoint for small vw, change font size, line-height -> small and remove top margin
-export const Text = styled(Texts.Text)`
+export const Text = styled(Texts.Text_32_48)`
   margin-top: 145px;
-  font-size: 32px;
-  line-height: 48px;
   padding: 0 10vw;
 `;
 
@@ -46,17 +44,10 @@ export const SideTexts = styled(AboutContainer)`
 `;
 
 //TODO: provisional typography, gonna make it into texts later
-export const AboutText = styled(Texts.Text)`
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 48px;
+export const AboutText = styled(Texts.Text_32_48)`
   display: flex;
   align-items: center;
   text-align: justify;
 `;
 
-export const AboutHeader = styled(Header)`
-  font-weight: 400;
-  font-size: 128px;
-  line-height: 192px;
-`;
+export const AboutHeader = styled(Texts.SectionHeader)``;
